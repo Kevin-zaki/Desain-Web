@@ -1,0 +1,155 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-image: url(https://mediacdn.quipper.com/media/W1siZiIsIjIwMjAvMTIvMDgvMTEvMDcvMzMvOWZjY2UyNzItZjk1MC00NmZmLTg5NTUtZWQ0NWYzYzhlYTA0LyJdLFsicCIsInRodW1iIiwiMTIwMHhcdTAwM2UiLHt9XSxbInAiLCJjb252ZXJ0IiwiLWNvbG9yc3BhY2Ugc1JHQiAtc3RyaXAiLHsiZm9ybWF0IjoianBnIn1dXQ.jpg?sha=84ff1dd68dde6500);
+    background-size:cover ;
+    color: #333;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.bentar {
+    display: flex;
+    padding: 5px 10px 5px 10px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Content Section */
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Content Grid Layout */
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.content .item {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.content .item h4 {
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.content .item p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
