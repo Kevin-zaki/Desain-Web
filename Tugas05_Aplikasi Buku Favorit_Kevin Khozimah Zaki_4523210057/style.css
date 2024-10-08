@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(222, 253, 187);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#session-container {
+    margin-bottom: 20px;
+}
+
+#session-container input {
+    margin-right: 10px;
+}
+
+form, .buku {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 5px 0;
+    padding: 8px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#daftar-buku, #buku-favorit {
+    border: 1.5px solid #333;
+    padding: 10px;
+}
+
+.buku {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.buku:last-child {
+    border-bottom: none;
+}
+
+.buku p {
+    margin: 0;
+}
+
+.buku button {
+    margin-top: 10px;
+}

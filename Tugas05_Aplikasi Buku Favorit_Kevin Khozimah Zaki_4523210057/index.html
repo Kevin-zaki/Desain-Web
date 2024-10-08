@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Aplikasi Buku Favorit</h1>
+
+    <!-- Input Nama Pengguna -->
+    <div id="session-container">
+        <input type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" />
+        <button id="btnSimpanNama">Simpan Nama</button>
+        <h3 id="salamPengguna"></h3>
+    </div>
+
+    <!-- Form Tambah Buku -->
+    <form id="form-tambah-buku">
+        <input type="text" id="judul" placeholder="Judul Buku" required />
+        <input type="text" id="penulis" placeholder="Penulis" required />
+        <input type="number" id="tahun" placeholder="Tahun Terbit" required />
+        <button type="submit">Tambah Buku</button>
+    </form>
+
+    <!-- Daftar Buku -->
+    <h2>Daftar Buku</h2>
+    <div id="daftar-buku"></div>
+
+    <!-- Buku Favorit -->
+    <h2>Buku Favorit</h2>
+    <div id="buku-favorit"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
