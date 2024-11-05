@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-blue-400 font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-center text-4xl font-bold text-white mb-6 drop-shadow-lg">Aplikasi Buku Favorit</h1>
+        
+        <!-- Input Nama Pengguna -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-6 transition-transform transform hover:scale-105" id="session-container">
+            <h2 class="text-xl font-semibold mb-4">Selamat Datang!</h2>
+            <input class="border border-gray-300 w-full rounded-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="namaPengguna" placeholder="Masukkan Nama Anda" />
+            
+            <button class=" bg-sky-500 shadow-lg hover:shadow-sky-500 hover:bg-sky-700 w-full rounded-full bg-blue-500 shadow-lg hover:bg-blue-600 text-white font-bold p-2 transition duration-200" id="btnSimpanNama">Simpan Nama</button>
+            <h3 class="mt-6 text-center text-gray-700" id="salamPengguna"></h3>
+        </div>
+        
+        <!-- Form Tambah Buku -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-6 transition-transform transform hover:scale-105">
+            <h2 class="text-xl font-semibold mb-4">Tambah Buku</h2>
+            <form id="form-tambah-buku">
+                <input class="border border-gray-300 w-full rounded-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="judul" placeholder="Judul Buku" required />
+                <input class="border border-gray-300 w-full rounded-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="penulis" placeholder="Penulis" required />
+                <input class="border border-gray-300 w-full rounded-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" id="tahun" placeholder="Tahun Terbit" required />
+                <button class=" bg-sky-500 shadow-lg hover:shadow-sky-500 hover:bg-sky-700 w-full rounded-full bg-blue-500 shadow-lg hover:bg-blue-600 text-white font-bold p-2 transition duration-200" type="submit">Tambah Buku</button>
+            </form>
+        </div>
+
+        <!-- Daftar Buku -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-6 transition-transform transform hover:scale-105">
+            <h2 class="text-xl font-semibold mb-4">Daftar Buku</h2>
+            <div id="daftar-buku" class="space-y-2"></div>
+        </div>
+        
+        <!-- Buku Favorit -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-6 transition-transform transform hover:scale-105">
+            <h2 class="text-xl font-semibold mb-4">Buku Favorit</h2>
+            <div id="buku-favorit" class="space-y-2"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
